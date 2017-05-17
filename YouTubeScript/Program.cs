@@ -34,7 +34,7 @@ namespace YouTubeScript
 
         static public Boolean CheckURL(String URL)
         {
-            Regex YoutubeVideoRegex = new Regex("");
+            Regex YoutubeVideoRegex = new Regex("youtu(?:\.be|be\.com)/(?:.*v(?:/|=)|(?:.*/)?)([a-zA-Z0-9-_]+)");
 
             Match isUrl = YoutubeVideoRegex.Match(URL);
 
